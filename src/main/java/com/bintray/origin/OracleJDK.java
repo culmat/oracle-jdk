@@ -22,7 +22,7 @@ public class OracleJDK{
 	
 	public static void main(String[] args) throws Exception {
 		setLogLevel(org.slf4j.Logger.ROOT_LOGGER_NAME, Level.ERROR);
-		System.out.println(System.getProperty("bintray.token").substring(35));
+		System.out.println(System.getProperty("bintray_token").substring(35));
 		if(true) return;
 		new OracleJDK().run();
 	}
