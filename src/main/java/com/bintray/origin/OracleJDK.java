@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.slf4j.LoggerFactory;
 
+import com.bintray.origin.publish.BintrayJDK;
 import com.bintray.origin.publish.Publisher;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
@@ -21,6 +22,7 @@ public class OracleJDK{
 	
 	public static void main(String[] args) throws Exception {
 		setLogLevel(org.slf4j.Logger.ROOT_LOGGER_NAME, Level.ERROR);
+		System.out.println(System.getProperty("bintray.token").substring(35));
 		if(true) return;
 		new OracleJDK().run();
 	}
