@@ -6,4 +6,4 @@ jdk:
 os:
   - osx
   
-script: mvn clean install
+script: mvn clean exec:java

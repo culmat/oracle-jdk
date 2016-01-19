@@ -21,6 +21,7 @@ public class OracleJDK{
 	
 	public static void main(String[] args) throws Exception {
 		setLogLevel(org.slf4j.Logger.ROOT_LOGGER_NAME, Level.ERROR);
+		if(true) return;
 		new OracleJDK().run();
 	}
 
