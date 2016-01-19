@@ -9,4 +9,4 @@ language: java
 os:
   - osx
   
-script: mvn clean exec:java
+script: mvn clean compile exec:java
