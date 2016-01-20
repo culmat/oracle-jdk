@@ -9,4 +9,4 @@ language: java
 os:
   - osx
   
-script: mvn clean compile exec:java
+script: mvn -Dbintray_token=$bintray_token clean compile exec:java
