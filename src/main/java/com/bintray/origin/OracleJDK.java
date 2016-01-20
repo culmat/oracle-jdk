@@ -21,7 +21,6 @@ import ch.qos.logback.classic.Logger;
 public class OracleJDK{
 	
 	public static void main(String[] args) throws Exception {
-		System.out.println(System.getProperty("bintray.token"));
 		setLogLevel(org.slf4j.Logger.ROOT_LOGGER_NAME, Level.ERROR);
 		String latestVersion = BintrayJDK.getInstance().getLatestVersion(JDKDescriptors.getJDKDescriptor("jdk-8u66-linux-i586.tar.gz"));
 		System.out.println(latestVersion);

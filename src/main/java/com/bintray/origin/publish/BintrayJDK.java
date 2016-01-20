@@ -16,7 +16,7 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 
 public class BintrayJDK {
 
-	String token = System.getProperty("bintray.token");
+	String token = System.getProperty("bintray_token");
 	String user = "oracle-jdk";
 	String url = "https://api.bintray.com";
 	
