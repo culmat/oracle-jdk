@@ -45,6 +45,11 @@ public class BintrayJDK {
 		String versionUrl = format("%s/packages/%s/generic/%s/versions/_latest",url,user,desc.getOs_Arch());
 		HttpResponse<JsonNode> resp = get(versionUrl).basicAuth(user, token)
 		.header("accept", "application/json").asJson();
+		if(resp.getStatus() == 401) {
+			String msg = resp.getStatusText()+" "+resp.getStatusText();
+			System.out.println(msg);
+			throw new UnirestException(msg);
+		} 
 		return resp.getStatus() > 400 ? "undefined" :
 				resp.getBody().getObject().getString("name");
 	}
