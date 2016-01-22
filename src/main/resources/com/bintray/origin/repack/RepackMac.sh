@@ -1,4 +1,5 @@
 brew update
+brew install p7zip
 brew outdated p7zip || brew upgrade p7zip
 mkdir macwork
 mv $1.dmg macwork
