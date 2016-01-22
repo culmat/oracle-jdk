@@ -8,7 +8,7 @@ public class WindowsZipPublisher implements RepackagingPublisher {
 
 	@Override
 	public boolean isActiveFor(JDKDescriptor desc) {
-		return "windows".equals(desc.getOs());
+		return false &&  "windows".equals(desc.getOs());
 	}
 
 	public Repack getRepacker() {
