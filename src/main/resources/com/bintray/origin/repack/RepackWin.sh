@@ -1,4 +1,5 @@
-brew update
+brew update > /dev/null
+brew install p7zip
 brew outdated p7zip || brew upgrade p7zip
 7z e $1.exe 
 7z -otools x tools.zip
